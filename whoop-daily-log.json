@@ -168,9 +168,22 @@
   },
   {
     "date": "2026-04-04",
-    "pulled_at": "2026-04-04T03:10:24.408747+00:00",
-    "recovery": null,
-    "sleep": null,
+    "pulled_at": "2026-04-04T15:04:03.710758+00:00",
+    "recovery": {
+      "score": 61.0,
+      "hrv_ms": 50.0,
+      "resting_hr": 60.0,
+      "spo2": 95.2
+    },
+    "sleep": {
+      "total_hours": 7.92,
+      "efficiency": 0.948,
+      "deep_min": 105.6,
+      "rem_min": 103.0,
+      "light_min": 242.3,
+      "awake_min": 24.5,
+      "respiratory_rate": 15.1
+    },
     "workouts": [
       {
         "activity": 45,
@@ -184,25 +197,12 @@
           "zone4_min": 0.0,
           "zone5_min": 0.0
         }
-      },
-      {
-        "activity": 45,
-        "calories_kcal": 352.0,
-        "strain": 12.33,
-        "duration_min": 43.5,
-        "hr_zones": {
-          "zone1_min": 0.0,
-          "zone2_min": 0.0,
-          "zone3_min": 0.0,
-          "zone4_min": 0.0,
-          "zone5_min": 0.0
-        }
       }
     ],
     "strain": {
-      "daily_strain": 11.99,
-      "avg_hr": 83,
-      "total_calories_kcal": 1293.3
+      "daily_strain": 1.52,
+      "avg_hr": 63,
+      "total_calories_kcal": 799.0
     }
   }
 ]
