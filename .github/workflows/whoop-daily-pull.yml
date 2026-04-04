@@ -1,0 +1,43 @@
+name: WHOOP Daily Pull
+
+on:
+  schedule:
+    - cron: '0 14 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  pull-whoop-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Pull WHOOP data
+        env:
+          WHOOP_CLIENT_ID: ${{ secrets.WHOOP_CLIENT_ID }}
+          WHOOP_CLIENT_SECRET: ${{ secrets.WHOOP_CLIENT_SECRET }}
+          WHOOP_ACCESS_TOKEN: ${{ secrets.WHOOP_ACCESS_TOKEN }}
+          WHOOP_REFRESH_TOKEN: ${{ secrets.WHOOP_REFRESH_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python pull-whoop-data.py
+
+      - name: Commit and push data
+        run: |
+          git config user.name "WHOOP Bot"
+          git config user.email "whoop-bot@users.noreply.github.com"
+          git add whoop-daily-log.json
+          git diff --cached --quiet || git commit -m "WHOOP data $(date -u +%Y-%m-%d)"
+          git push
