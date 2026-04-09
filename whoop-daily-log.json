@@ -332,5 +332,70 @@
       "avg_hr": 64,
       "total_calories_kcal": 1074.6
     }
+  },
+  {
+    "date": "2026-04-09",
+    "pulled_at": "2026-04-09T17:44:23.677966+00:00",
+    "recovery": {
+      "score": 77.0,
+      "hrv_ms": 55.3,
+      "resting_hr": 59.0,
+      "spo2": 95.2
+    },
+    "sleep": {
+      "total_hours": 7.95,
+      "efficiency": 0.942,
+      "deep_min": 102.0,
+      "rem_min": 90.0,
+      "light_min": 255.8,
+      "awake_min": 29.2,
+      "respiratory_rate": 15.7
+    },
+    "workouts": [
+      {
+        "activity": -1,
+        "calories_kcal": 135.4,
+        "strain": 5.38,
+        "duration_min": 27.0,
+        "hr_zones": {
+          "zone1_min": 0.0,
+          "zone2_min": 0.0,
+          "zone3_min": 0.0,
+          "zone4_min": 0.0,
+          "zone5_min": 0.0
+        }
+      },
+      {
+        "activity": 45,
+        "calories_kcal": 442.1,
+        "strain": 13.38,
+        "duration_min": 51.0,
+        "hr_zones": {
+          "zone1_min": 0.0,
+          "zone2_min": 0.0,
+          "zone3_min": 0.0,
+          "zone4_min": 0.0,
+          "zone5_min": 0.0
+        }
+      },
+      {
+        "activity": 45,
+        "calories_kcal": 209.0,
+        "strain": 10.5,
+        "duration_min": 40.8,
+        "hr_zones": {
+          "zone1_min": 0.0,
+          "zone2_min": 0.0,
+          "zone3_min": 0.0,
+          "zone4_min": 0.0,
+          "zone5_min": 0.0
+        }
+      }
+    ],
+    "strain": {
+      "daily_strain": 14.36,
+      "avg_hr": 73,
+      "total_calories_kcal": 1580.8
+    }
   }
 ]
