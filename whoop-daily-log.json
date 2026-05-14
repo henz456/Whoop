@@ -1577,5 +1577,44 @@
       "avg_hr": 69,
       "total_calories_kcal": 988.1
     }
+  },
+  {
+    "date": "2026-05-14",
+    "pulled_at": "2026-05-14T16:08:15.973100+00:00",
+    "recovery": {
+      "score": 53.0,
+      "hrv_ms": 49.3,
+      "resting_hr": 61.0,
+      "spo2": 95.6
+    },
+    "sleep": {
+      "total_hours": 8.01,
+      "efficiency": 0.913,
+      "deep_min": 111.6,
+      "rem_min": 95.5,
+      "light_min": 230.1,
+      "awake_min": 43.5,
+      "respiratory_rate": 15.5
+    },
+    "workouts": [
+      {
+        "activity": 45,
+        "calories_kcal": 328.3,
+        "strain": 11.54,
+        "duration_min": 31.5,
+        "hr_zones": {
+          "zone1_min": 0.0,
+          "zone2_min": 0.0,
+          "zone3_min": 0.0,
+          "zone4_min": 0.0,
+          "zone5_min": 0.0
+        }
+      }
+    ],
+    "strain": {
+      "daily_strain": 0.18,
+      "avg_hr": 65,
+      "total_calories_kcal": 908.6
+    }
   }
 ]
