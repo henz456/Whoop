@@ -2164,5 +2164,17 @@
       "avg_hr": 99,
       "total_calories_kcal": 3417.7
     }
+  },
+  {
+    "date": "2026-06-21",
+    "pulled_at": "2026-06-21T15:47:56.384380+00:00",
+    "recovery": null,
+    "sleep": null,
+    "workouts": [],
+    "strain": {
+      "daily_strain": 20.51,
+      "avg_hr": 99,
+      "total_calories_kcal": 3417.7
+    }
   }
 ]
