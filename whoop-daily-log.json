@@ -3772,5 +3772,17 @@
       "avg_hr": 0,
       "total_calories_kcal": 0.0
     }
+  },
+  {
+    "date": "2026-11-03",
+    "pulled_at": "2026-11-03T20:22:26.957567+00:00",
+    "recovery": null,
+    "sleep": null,
+    "workouts": [],
+    "strain": {
+      "daily_strain": 0.0,
+      "avg_hr": 0,
+      "total_calories_kcal": 0.0
+    }
   }
 ]
